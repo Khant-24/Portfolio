@@ -30,6 +30,28 @@ h2 {
     text-decoration: none;
 }
 
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+/*@media (max-width: 768px){
+    .btn-close{
+        display: none;
+    }
+}*/
+
+.btn-close {
+    display: flex;
+    float: right;
+}
+
+.navbar-toggler {
+    position: relative;
+}
+
 /* Home */
 .image {
     height: 100vh;
@@ -234,25 +256,67 @@ p {
 .ion-android-phone-portrait:before {
     content: "\f3a2";
 }
-.contact-mf{
+
+.contact-mf {
     margin-top: 4rem;
 }
-.title-box{
+
+.title-box {
     margin-bottom: 3rem;
 }
-.form-group{
+
+.form-group {
     margin-bottom: 1rems;
 }
-/*.form-control{
-    display: block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
+
+.button-rounded {
+    border-radius: 5rem;
+}
+
+/* get in touch*/
+ul,
+.socials ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-icon {
+    line-height: 2;
+}
+
+.list-icon span {
+    color: #0078ff;
+    margin-right: 10px;
+
+}
+
+.ion-ios-telephone:before {
+    content: "\f4b9";
+}
+
+.ion-email:before {
+    content: "\f132";
+}
+
+.socials {
+    padding: 1.5rem 0;
+}
+
+.socials ul li {
+    display: inline-block;
+}
+
+.socials .icon-circle {
+    height: 40px;
+    width: 40px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    line-height: 1.4;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 500ms ease;
+}
+.socials ul li a {
+    color:#1e1e1e
 }
